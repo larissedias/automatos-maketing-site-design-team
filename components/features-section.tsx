@@ -74,15 +74,15 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50 card-glow hover:border-primary/20 transition-all duration-300"
+              className="bg-card/20 backdrop-blur-sm rounded-2xl p-8 border border-border/50 card-glow hover:border-primary/20 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
               <div className="space-y-4">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.gradient} flex items-center justify-center`}>
-                  <feature.icon className="w-6 h-6 text-white" />
-                </div>
+               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#026181] to-[#07D6A2] flex items-center justify-center">
+  <feature.icon className="w-6 h-6 text-white" />
+</div>
                 
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold">{feature.title}</h3>

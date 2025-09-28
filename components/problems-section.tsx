@@ -83,8 +83,7 @@ export function ProblemsSection() {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               whileHover={{ scale: 1.02 }}
             >
-              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${problem.gradient} flex items-center justify-center mb-4`}>
-                <problem.icon className="w-6 h-6 text-white" />
+<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#026181] to-[#07D6A2] flex items-center justify-center">                <problem.icon className="w-6 h-6 text-white" />
               </div>
               
               <h3 className="text-xl font-semibold mb-3">{problem.title}</h3>

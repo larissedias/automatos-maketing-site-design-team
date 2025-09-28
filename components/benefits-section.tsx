@@ -71,8 +71,7 @@ export function BenefitsSection() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-orange-500 flex items-center justify-center flex-shrink-0">
-                  <benefit.icon className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#026181] to-[#07D6A2] flex items-center justify-center flex-shrink-0 shadow-lg">                  <benefit.icon className="w-6 h-6 text-white" />
                 </div>
                 
                 <div className="flex-1">

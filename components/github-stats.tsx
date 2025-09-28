@@ -132,7 +132,7 @@ export function GitHubStats() {
           key={stat.label}
           className="text-center"
         >
-          <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary to-orange-500 flex items-center justify-center">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-[#026181] to-[#07D6A2] flex items-center justify-center">
             <stat.icon className="w-8 h-8 text-white" />
           </div>
           <div className="text-2xl font-bold">{stat.value}</div>

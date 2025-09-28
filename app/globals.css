@@ -11,53 +11,58 @@
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 16 100% 60%;
+    --primary: 180 100% 25%; /* teal (#008080) */
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 65%;
-    --accent: 16 100% 60%;
+    --accent: 180 100% 25%; /* teal (#008080) */
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 16 100% 60%;
+    --ring: 180 100% 25%; /* teal (#008080) */
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+
+ body {
+  @apply text-foreground;
+  background-image: url('/public/bg_automatos.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* <--- makes it static while scrolling */
+  background-color: transparent; /* make sure no solid color covers it */
+}
 }
 
 @layer components {
   .gradient-bg {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #010b1d 0%, #012530 100%);
   }
   
   .gradient-accent {
-    background: linear-gradient(135deg, #ff6b35 0%, #ff4500 100%);
+    background: linear-gradient(135deg, #008080 0%, #006666 100%);
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, #ff6b35 0%, #ff4500 100%);
+    background: linear-gradient(135deg, #008080 0%, #006666 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .card-glow {
-    box-shadow: 0 0 20px rgba(255, 107, 53, 0.1);
+    box-shadow: 0 0 20px rgba(21, 136, 136, 0.1);
   }
   
   .card-glow:hover {
-    box-shadow: 0 0 40px rgba(255, 107, 53, 0.2);
+    box-shadow: 0 0 40px rgba(27, 139, 139, 0.2);
   }
 }
 

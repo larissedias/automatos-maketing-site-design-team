@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { Github, Twitter, Linkedin, Instagram, MessageSquare, Heart } from 'lucide-react'
+import { Github, Twitter, Linkedin, Instagram, MessageSquare, Heart, GlassWater, Wine } from 'lucide-react'
 
 export function Footer() {
   const [ref, inView] = useInView({
@@ -16,10 +16,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-orange-500 flex items-center justify-center">
-                <div className="w-4 h-4 bg-white rounded-sm"></div>
-              </div>
-              <span className="text-xl font-bold">Automatos AI</span>
+              <div className="flex items-center space-x-2 mb-4">
+  <img 
+    src="/logo_full_horizontal_duocolor-white.png" 
+    alt="Automatos AI Logo" 
+    className="h-8 w-auto"
+  />
+</div>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm">
               The open-source multi-agent orchestration platform for modern AI workflows and DevOps integration.
@@ -105,7 +108,7 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">© 2024 Automatos AI. All rights reserved.</p>
             <div className="flex items-center space-x-1 text-sm text-muted-foreground mt-4 md:mt-0">
               <span>Made with</span>
-              <Heart className="w-4 h-4 text-red-500" />
+              <Wine className="w-4 h-4 text-red-500" />
               <span>for the open source community</span>
             </div>
           </div>

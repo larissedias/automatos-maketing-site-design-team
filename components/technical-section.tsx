@@ -69,8 +69,7 @@ export function TechnicalSection() {
             >
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-white" />
+<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#026181] to-[#07D6A2] flex items-center justify-center">                    <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold">{item.title}</h3>
                 </div>
